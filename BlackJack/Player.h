@@ -7,7 +7,6 @@ private:
 	int _handAmount = 0;
 	bool _isDealer;
 public:
-	~Player() { delete[] _hand; };
 	explicit Player(bool isDealer = false) : _isDealer(isDealer) { };
 	std::string getHandPresentation(bool endGame = false);
 	int getHandValue();
